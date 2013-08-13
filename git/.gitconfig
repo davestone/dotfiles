@@ -1,0 +1,5 @@
+[core]
+	excludesfile = /Users/dave/.gitignore_global
+[user]
+	name = Dave Stone
+	email = dave@davecstone.com

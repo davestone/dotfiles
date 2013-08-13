@@ -1,0 +1,23 @@
+#!/usr/bin/bash
+
+DOTFILES_PATH="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+for SOURCE in `find $DOTFILES_PATH/*/ -type f`
+do
+  DEST="$HOME/`basename $SOURCE`"
+
+  echo -n $SOURCE
+  echo -n "  =>  "
+  echo $DEST
+
+  if [ -f "$DEST" ]
+  then
+    mv $DEST $DEST.old
+    echo "  Moved old to .old"
+  fi
+
+  ln -s $SOURCE $DEST
+  echo "  COMPLETE"
+done
+
+source ~/.bash_profile
