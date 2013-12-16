@@ -1,5 +1,12 @@
-[core]
-	excludesfile = /Users/dave/.gitignore_global
 [user]
 	name = Dave Stone
 	email = dave@davecstone.com
+[gitflow "branch"]
+	master = master
+	develop = develop
+[gitflow "prefix"]
+	feature = feature/
+	release = release/
+	hotfix = hotfix/
+	support = support/
+	versiontag = 
