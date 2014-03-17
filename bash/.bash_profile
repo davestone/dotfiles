@@ -3,3 +3,4 @@ export PS1="\W \u$ "
 export OPSCODE_USER="davestone"
 
 [ -r "$HOME/.smartcd_config" ] && ( [ -n $BASH_VERSION ] || [ -n $ZSH_VERSION ] ) && source ~/.smartcd_config
+eval "$(rbenv init -)"
